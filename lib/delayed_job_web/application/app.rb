@@ -40,7 +40,7 @@ class DelayedJobWeb < Sinatra::Base
   end
 
   def per_page
-    params[:per_page].to_i > 0 ? params[:per_page].to_i : 20
+    params[:per_page].to_i > 0 ? params[:per_page].to_i : 100
   end
 
   def url_path(*path_parts)
